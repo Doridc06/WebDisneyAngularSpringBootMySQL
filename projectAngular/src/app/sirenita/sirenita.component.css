@@ -1,0 +1,111 @@
+.header {
+  position: relative;
+  height: 130px; /* Ajusta la altura según necesites */
+  overflow: hidden;
+}
+
+h2{
+  padding-top: 10px;
+}
+
+.background-image {
+  width: 20%; /* o un valor específico */
+  height: auto; /* o un valor específico */
+}
+
+.izquierda {
+  display: flex; /* Usar Flexbox para alinear elementos */
+  align-items: center; /* Alinear verticalmente en el centro */
+  justify-content: flex-start; /* Alinear a la izquierda */
+}
+
+.derecha {
+  text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.imageVertical {
+  width: 30%;
+  height: auto; /* Asegúrate de que la altura sea automática para mantener la proporción */
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.menu {
+  background-color: #333; /* Color de fondo del menú */
+  padding: 10px 0; /* Espaciado superior e inferior */
+}
+
+.menu ul {
+  list-style-type: none; /* Sin viñetas */
+  text-align: center; /* Centrar el contenido */
+}
+
+.menu li {
+  display: inline; /* Mostrar en línea */
+  margin: 0 20px; /* Espaciado entre los elementos del menú */
+}
+
+.menu a {
+  color: white; /* Color del texto */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold; /* Texto en negrita */
+}
+
+.content {
+  text-align: center;
+  margin: 50px; /* Margen alrededor del contenido */
+}
+
+footer {
+  text-align: center; /* Centrar el logo */
+  margin-top: 50px; /* Espaciado superior */
+}
+
+.angular-logo {
+  width: 100px; /* Ajusta el tamaño según necesites */
+}
+
+a {
+cursor: pointer; /* Para q salga la manito en el puntero*/
+}
+
+p {
+border: 2px solid #b33636; /* Borde de color rojo oscuro */
+border-radius: 10px; /* Bordes redondeados para un estilo de burbuja de diálogo */
+padding: 40px; /* Espacio interno para que el texto no esté pegado al borde */
+background-color: #fff; /* Color de fondo blanco para resaltar el texto */
+box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+font-family: 'Comic Sans MS', cursive, sans-serif; /* Tipografía de cómic */
+}
+
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .background-image {
+    width: 70%;
+  }
+
+  .izquierda {
+    flex-direction: column; /* Cambiar a dirección de columna en pantallas pequeñas */
+    align-items: center; /* Centrar elementos */
+    text-align: center; /* Alinear texto al centro */
+  }
+
+  .imageVertical {
+    width: 80%; /* Imagen vertical ocupando el 80% */
+    margin-right: 0; /* Sin margen derecho */
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+  }
+
+  .menu li {
+    display: block; /* Mostrar elementos de menú en bloque */
+    margin: 10px 0; /* Espaciado vertical entre elementos */
+  }
+
+  .content {
+    margin: 20px; /* Reducir margen alrededor del contenido */
+  }
+
+  footer {
+    margin-top: 20px; /* Reducir margen superior del footer */
+  }
+}

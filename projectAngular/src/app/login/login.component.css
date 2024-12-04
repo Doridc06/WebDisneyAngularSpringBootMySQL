@@ -1,0 +1,55 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+
+
+}
+
+.content {
+    text-align: center;
+
+}
+
+.background-image {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 30px;
+    border: 2px solid #226e75;
+    background-color: rgb(94, 232, 232);
+    border-radius: 50px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.submit-btn {
+    background-color: #226e75;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.submit-btn:disabled {
+    background-color: white;
+}
+
+
+.angular-logo {
+    width: 100px;
+    /* Ajusta el tamaño según necesites */
+}
